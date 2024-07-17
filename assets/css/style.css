@@ -36,3 +36,14 @@ img {
     display: block;
     height: auto;
 }
+
+/*------------------------ Card ---------------------------------*/
+.card_division {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(../images/image-product-mobile.jpg);
+    display: flex;
+    flex-direction: column-reverse;
+    background-position: top center;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 40rem;
+    margin: 2.5rem 1.5rem;
+}
