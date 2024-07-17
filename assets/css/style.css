@@ -1,10 +1,9 @@
 :root {
-    --primario: #1073bA;
-    --secundario: #00DA55;
-    --gris: #3B3B3B;
-    --negro: #1F1F1F;
-    --grisClaro: #E1E1E1;
+    --precio: #6C7289;
+    --descuento: #3D8168;
+    --negro: #1C232B;
     --blanco: #FFFFFF;
+    --grisClaro: #6C7289;
 
     --fuentePrincipal: "Montserrat", sans-serif;
     --fuenteSecundaria: "Fraunces", serif;
