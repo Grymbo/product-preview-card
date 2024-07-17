@@ -1,0 +1,39 @@
+:root {
+    --primario: #1073bA;
+    --secundario: #00DA55;
+    --gris: #3B3B3B;
+    --negro: #1F1F1F;
+    --grisClaro: #E1E1E1;
+    --blanco: #FFFFFF;
+
+    --fuentePrincipal: "Montserrat", sans-serif;
+    --fuenteSecundaria: "Fraunces", serif;
+
+    --separacion: 5rem;
+}
+
+/*---------------------------------------- Globales ----------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1,
+h2 {
+    font-family: var(--fuenteSecundaria);
+    font-weight: 700;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
