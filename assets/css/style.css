@@ -41,6 +41,12 @@ img {
 }
 
 /*------------------------ Card ---------------------------------*/
+@media (min-width: 1024px){
+    .fondo {
+        padding: 20rem 33rem;
+    }
+}
+
 .card_division {
     background-image: linear-gradient(to bottom, transparent 40%, var(--blanco) 0%), url(../images/image-product-mobile.jpg);
     display: flex;
@@ -50,6 +56,7 @@ img {
     background-size: 100%, 40rem;
     margin: 2.5rem 1.5rem;
     border-radius: 1.5rem;
+    
 }
 .card_division_grid {
     display: grid;
@@ -92,6 +99,7 @@ img {
     font-size: 1.3rem;
     line-height: 2.3rem;
     color: var(--grisClaro);
+    text-decoration: line-through;
 }
 .boton {
     display: flex;
@@ -107,71 +115,29 @@ img {
     font-size: 1.4rem;
     line-height: 1.77rem;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     .card_division {
-        background-image: linear-gradient(to bottom, transparent 40%, var(--blanco) 0%), url(../images/image-product-mobile.jpg);
-        display: flex;
-        flex-direction: column-reverse;
-        background-position: top;
+        background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%), url(../images/image-product-desktop.jpg);
         background-repeat: repeat, no-repeat;
-        background-size: 100%, 40rem;
-        margin: 2.5rem 1.5rem;
+        background-position: left center;
+        background-size: 100%, 35rem;
+        /*margin: 2.5rem 1.5rem;*/
         border-radius: 1.5rem;
+        max-height: 100%;
     }
     .card_division_grid {
-        display: grid;
-        grid-template-rows: 24rem 42.5rem;
-        row-gap: 1rem;
+        grid-template-rows: none;
+        grid-template-columns: repeat(2, 1fr);
     }
     .card_division_testo {
-        grid-row: 2 / 3;
+        grid-column: 2 / 3;
         display: flex;
-        flex-direction: column;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .card_division_testo h3 {
-        font-weight: 500;
-        font-size: 1.2rem;
-        color: var(--grisClaro);
-        text-transform: uppercase;
-        line-height: 1.5rem;
-        margin-top: 2.5rem;
-    }
-    .card_division_testo h1 {
-        font-weight: 700;
-        font-size: 3.2rem;
-        line-height: 3.2rem;
-    }
-    .card_division_testo p {
-        font-weight: 500;
-        font-size: 1.4rem;
-        line-height: 2.3rem;
-    }
-    .card_division_testo h2 {
-        font-weight: 700;
-        font-size: 3.2rem;
-        color: var(--descuento);
-        line-height: 3.2rem;
-    }
-    .card_division_testo h2 span {
-        font-weight: 500;
-        font-size: 1.3rem;
-        line-height: 2.3rem;
-        color: var(--grisClaro);
-    }
-    .boton {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--descuento);  
-        border-radius: 1rem;
-    }
-    .boton p {
-        margin-left: 1rem;
-        color: var(--blanco);
-        font-weight: 700;
-        font-size: 1.4rem;
-        line-height: 1.77rem;
-    }
+        justify-content: space-between;
+        margin-top: 0;
+        padding: 0 3rem 3rem 3rem;
+    }  
+}
+.boton:hover {
+    background-color: var(--hoverBoton);
+    color: var(--blanco);
 }
